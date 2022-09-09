@@ -1,6 +1,6 @@
 "use strict";
 
-const correctNumber = Math.floor(Math.random() * 20);
+let correctNumber = Math.floor(Math.random() * 20);
 console.log(correctNumber);
 let userNumber;
 let highscore = Number(document.querySelector(".highscore").textContent);
@@ -33,6 +33,7 @@ const againFunction = function () {
   document.querySelector(".score").textContent = score;
   document.body.style.backgroundColor = "#222";
   document.querySelector(".number").textContent = "?";
+  correctNumber = Math.floor(Math.random() * 20);
 };
 
 const againClick = document
